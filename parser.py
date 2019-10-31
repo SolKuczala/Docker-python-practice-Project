@@ -1,6 +1,9 @@
+#!/usr/bin/env python
+
 import base64
 from random import choice
 from string import ascii_letters
+import sys
 
 def random_characters(lenght):
     "Returns a string of character with lenght in number form provided."
@@ -12,13 +15,13 @@ def random_characters(lenght):
 
 def encode_string_64(string):
     "Returns a string encoded in base64."
-    encodedBytes = base64.b64encode(string.encode("utf-8"))
-    return str(encodedBytes, "utf-8")
+    encodedString = base64.b64encode(string.encode("utf-8"))
+    return str(encodedString, "utf-8")
 
 def decode_string_64(encoded_string):
     "Returns an encoded base64 string decoded."
-    decodedBytes = base64.b64decode(encoded_string)
-    return str(decodedBytes, "utf-8")
+    decodedString = base64.b64decode(encoded_string)
+    return str(decodedString, "utf-8")
 
-
-print()
+if sys.argv:
+    print('ok')
