@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-import grsed_core.py as grsed
+from Docker-python-practiceProject.grsed_core.py import *
 import sys
 
 actions = {
-    '-r' : (grsed.random_characters,int),
-    '-e' : (grsed.encode_string_64,str),
-    '-d' : (grsed.decode_string_64,str)
+    '-r' : (random_characters,int),
+    '-e' : (encode_string_64,str),
+    '-d' : (decode_string_64,str)
 }
 
 input_option = sys.argv[1]
