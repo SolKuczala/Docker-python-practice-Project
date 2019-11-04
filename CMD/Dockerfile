@@ -5,6 +5,6 @@ RUN apt-get update -y && \
 
 RUN git clone https://github.com/SolKuczala/Docker-python-practiceProject.git
 
-WORKDIR /Docker-python-practiceProject/CMD
+WORKDIR /Docker-python-practiceProject
 
-CMD python3 grsed.py
+CMD python3 grsed -r 4

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import grsed_core.py as grsed
+import grsed_core as grsed
 import sys
 
 actions = {
