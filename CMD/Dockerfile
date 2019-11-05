@@ -7,4 +7,5 @@ RUN git clone https://github.com/SolKuczala/Docker-python-practiceProject.git
 
 WORKDIR /Docker-python-practiceProject
 
-CMD python3 grsed -r 4
+CMD ./grsed -r 4
+
