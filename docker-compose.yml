@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+
+  server:
+    build: .
+    deploy:
+      replicas: 1
+        delay: 10s
+      restart_policy:
+        condition: on-failure
