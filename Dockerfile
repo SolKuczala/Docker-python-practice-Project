@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 RUN apt-get update -y && \
-    apt-get install -y python3 git python3-pip
+    apt-get install -y --no-install-recommends python3 git python3-pip
 
 RUN pip3 install flask
 
